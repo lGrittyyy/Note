@@ -1,0 +1,32 @@
+Example of how an algorithm can be useful.
+
+Take a phone number book and find a specific contact in it.
+
+We could search every page. This leads to a solution but it's slow.
+We could search every two pages. This takes half the time but does not necessarily lead to a solution.
+
+Bi-section method. Has logarithmic shape -> if the problem doubles in size, it's just one more step. 
+
+1. Pick up book
+2. Get to the middle
+3. If found
+  Call person
+4. If not
+  Back to step 3
+end
+
+This sort of pseudocode can be implemented with "Scratch". Different  events and conditions and actions 
+can be triggered with pre configured blocks. 
+Custom blocks can also be created. 
+
+sensing/say -> print
+sensing/ask -> prompt and saves to sensing/answer as a variable.
+Because blocks are executed in series, a combined string must be printed thanks to the operators/join operator.
+
+My Blocks allows for "abstraction". Multiple basic blocks can be combined to create new, resuable blocks of increased comoplexity.
+Once the custom block is created, it does not really matter what's inside, as long as it works. 
+The function name says what it does and anybody can use it in a useful way, despite not really knowing
+what's going on in it. This is abstraction. 
+
+
+

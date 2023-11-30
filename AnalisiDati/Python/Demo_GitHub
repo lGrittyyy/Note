@@ -1,0 +1,62 @@
+Test delle funzionalita' git da CLI su VSCode
+
+Copiare URL repo.
+
+Per clonare:
+
+Da prompt win o da GitBash
+Da terminale su VSCode
+
+
+git branch per entrare
+git checkout per uscire
+
+
+Per cominciare a lavorare sul pc e' necessario git clone
+il comando clona la directory su una scelta dall'utente
+(se nulla e' specificato usa la home(unix), o il desktop(win))
+
+Sulla repo sono presenti 3 branch. 'git branch' permette di avere una lista
+dei branch disponibili.
+Nel caso di esempio solo il main era visibile di default.
+Per entrare negli altri 'git checkout Gab' consocendo il nome del branch
+'Git checkout main' per tornare al main.
+
+Per modificare un ramo creato con una chiace SSH sara' necessario fornire la chiave.
+
+
+Proviamo a creare un branch:
+va definito da quale ramo partiremo. Per banch si intende una diramzione del progetto.
+Se vogliamo fare una modifica invece che lavorare sul 'tronco' possiamo creare una diramazione 
+e lavorare su quella. Questo permette anche di lavorare in parallelo senza modficare lo stesso progetto 
+e creare conflitti.
+
+Una volta effettuate le modifiche volute su un branch sara' possbile terstarlo e successivamente
+ricongiungersi al main per rendere il cambiamento desiderato.
+
+Un branch puo' essere creato sia a partire dal main sia da uno qualiasi degli altri branch. 
+'git branch <nome_nuovo_branch>'
+
+A questo punto il cmabiamento non apparira' su GitHub. E' solo in un buffer del nostro git locale.
+Per aggiornare la repository GitHub dovremo usare 'git push'.
+
+Se qualcuno modifica la repo mentre noi siamo in una sessione clonata, per avere l'aggiornamento 
+in locale dovremo fra 'git pull'.
+
+Se una efettuiamo una modifica sulla cartella locale questa non verra' sincronizzata ne' su git ne' su
+GitHub. Per controllare le differenza fra cartella locale e git, 'git status'.
+Per sincronizzare con git, 'git add'.
+
+Dopo 'git add', 'git status' riporera' che il cambiamento e' ancora da committare e quindi non e' stato
+caricato su GitHub. 'git commit' sincronizzera' la cartella git e creera' una nuova 
+versione del file modificato. Questo commit va sempre fatto su un branch diverso dal main. Solo successivemente
+mergeremo. 'git push' effettuera' il cambiamento su GitHub e lo rendera' disponibile a chiunque. 
+
+Per portare un cambiamento da un ramo secondario al main, 'git merge'.
+Come buona abitudine prima si fa merge dal main al branch secondario per assicurarsi che tutto sia alla
+versione piu' nuova possibile.
+A questo punto possiamo fare 'git merge' con il main. 'merge' non sostituisce il ramo, semplicemente 
+lo aggiorna con le modifiche effettuate. Se un file non e' stato toccato e non e' presente nel branch secondario
+su cui abbiamo lavorato, questo sara' ancora presente, invariato, sul main branch. 
+
+

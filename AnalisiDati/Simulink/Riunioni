@@ -1,0 +1,61 @@
+Venerdi' 17/11
+Prima Riunione
+--------------
+
+Presentazione Task
+Tentativo di sostituire la funzione usate dal modello per estrapolare una run predittiva
+Possibilita' di studiare effetto di un profilo di potenza custom
+
+Tempistiche
+Anytime
+
+Individuazione Ostacoli Principali 
+Stima coefficienti, approssimazione equazioni fondamentali
+Grado di Complessita'. Fino a che punto vogliamo spingerci???
+
+Obiettivo finale ed expected outcome
+
+Validazione dei modelli black box n4sid
+Definzione profilo di potenza ideale
+Confronto con divisione di Biomeccanica per match con rider.
+Possibilita' di fornire un piano di allenamento concreto e specifico ai rider.
+
+
+
+Venerdi' 24/11
+Seconda Riunione, Brainstorming Update
+
+
+Presentazione ideale
+
+Mike:  ha girato il pdf. Per quello che riguarda il prototipo racing l'unica cosa che conta e' come la potenza viene
+scaricata a terra. Questo sarebbe poi scalibile anche per KORA con l'aggiunta.
+
+All'inizio si puo' pensare di partire con una approssimazione di ognugno dei contributi a delle costanti.
+Per prima cosa va implementata l'equazione del moto. Poi l'input di potenza e il profilo del terreno.
+Eventualmente inserire effetto della traiettoria non ideale.
+
+Mattia: la cosa piu' complicata potrebbe essere la definizione del profilo di potenza.
+
+
+M&M: definizione della massa equivalente.
+
+
+Definzione compiti individuali
+
+Primo passo deve essere la definizione dell'equazione differenziale della velocita'.
+Poi blocchetti e da li suddivisione personale del lavoro.
+
+Fissare prossima riunione
+
+2/12/23
+implementata eq dasd longitudinal dynamics su terreno piatto a potenza costante 300W.
+
+Recap:
+
+Partendo dall'equazione di DASD la cosa piu' facile e' probabilmente implementare prima il profilo di potenza.
+Successivamente si puo' aggiungere l'effetto della pendenza scrivendo alpha come arcotangente di due celle successive dei 
+dati altimetrici. 
+Vale la pena di modellare le perdite della trasmissione in funzione della velocita'??
+Abbiamo modo di misurarle? 
+
